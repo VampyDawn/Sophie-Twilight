@@ -1,0 +1,73 @@
+@media (min-width: $breakpoint-m) {
+    .section {
+        &#hobbies {
+            .hobbies-container {
+                margin-top: 30px;
+                .hobby {
+                    border-top: 5px solid $secondary;
+                    &::after {
+                        content: "";
+                        height: 5px;
+                        width: 60px;
+                        background: $secondary;
+                        position: absolute;
+                    }
+                    &:nth-child(odd) {
+                        transform: translate(-70%);
+                        &::after {
+                            top: -5px;
+                            right: -60px;
+                        }
+                        .hobby-info_date {
+                            left: initial;
+                            right: 10px;
+                        }
+                    }
+                    &:nth-child(even) {
+                        transform: translate(70%);
+                        &::after {
+                            top: -5px;
+                            left: -60px;
+                        }
+                    }
+                    &_icon {
+                        border: 5px solid $secondary;
+                    }
+                }
+                &::before {
+                    content: "";
+                    width: 5px;
+                    height: 90%;
+                    background: $secondary;
+                    position:absolute;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-l) {
+    #header {
+        height: 50vh;
+        .owl-carousel {
+            height: 50vh;
+            .owl-item {
+                height: 50vh;
+                .item {
+                    height: 50vh;
+                }
+            }
+        }
+        .header {
+            &_intro {
+                font-size: 5.5rem;
+            }
+            &_welcome {
+                font-size: 3rem;
+            }
+        }
+        .scroll-down {
+            display: none;
+        }
+    }
+}

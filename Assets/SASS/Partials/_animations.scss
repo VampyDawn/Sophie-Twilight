@@ -1,0 +1,61 @@
+.toLeft {
+    transform: translate(10%, 0%);
+    opacity: 0;
+    transition: $showAnim;
+    &.show {
+        transform: translate(0%, 0%);
+        opacity: 1;
+        transition: $showAnim;
+    }
+}
+
+.toRight {
+    transform: translate(-10%, 0%);
+    opacity: 0;
+    transition: $showAnim;
+    &.show {
+        transform: translate(0%, 0%);
+        opacity: 1;
+        transition: $showAnim;
+    }
+}
+
+.toTop {
+    transform: translate(0%, 10%);
+    opacity: 0;
+    transition: $showAnim;
+    &.show {
+        transform: translate(0%, 0%);
+        opacity: 1;
+        transition: $showAnim;
+    }
+}
+
+.toBottom {
+    transform: translate(0%, -10%);
+    opacity: 0;
+    transition: $showAnim;
+    &.show {
+        transform: translate(0%, 0%);
+        opacity: 1;
+        transition: $showAnim;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    transition: $showAnim;
+    &.show {
+        opacity: 1;
+        transition: $showAnim;
+    }
+}
+
+.expand {
+    width: 10%;
+    transition: $showAnim;
+    &.show {
+        width: 100%;
+        transition: $showAnim;
+    }
+}
