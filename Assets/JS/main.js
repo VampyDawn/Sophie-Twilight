@@ -9,9 +9,8 @@ const hobbiesList = document.querySelectorAll('.hobby');
 
 
 window.onload = () => {
-    var diff_ms = Date.now() - new Date(2000, 1, 1).getTime();
-    var age_dt = new Date(diff_ms);
-    var fullAge = Math.abs(age_dt.getUTCFullYear() - 1970);
+    var cYear = Math.abs(new Date().getFullYear());
+    var fullAge = cYear - 2000;
     age.textContent = fullAge;
 }
 
